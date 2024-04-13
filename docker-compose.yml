@@ -18,6 +18,10 @@ services:
     restart: always
     environment:
       MONGODB_URL: "mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@mongo:27017/"
+      FACE_URL: "${FACE_URL}"
+      FACE_TOKEN: "${FACE_TOKEN}"
+      VOICE_URL: "${VOICE_URL}"
+      VOICE_TOKEN: "${VOICE_TOKEN}"
     expose:
       - 8081
     networks:
